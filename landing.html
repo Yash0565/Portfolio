@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style1.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="landing" id="home">
+        <div id="particles-js"></div>
+            <script src="particles.js"></script>
+            <script src="app.js"></script>
+        <div class="fix">
+            <div class="top">
+                <div class="left">
+                    <label><b>Portfolio</b></label>
+                </div>
+                
+
+                <script>
+                    const text = document.querySelectorAll('label');
+                    text.forEach(label => {
+                        label.innerHTML=label.textContent.split('').map((text,left)=> 
+                        `<span style="transition-delay: ${left * 50}ms">${text}</span>`).join('');
+                    })
+                </script>
+
+                <div class="navbar">
+                    <a href="#home"><b>Home</b></a>
+                    <a href="#about"><b>About Me</b></a>
+                    <a href="#about"><b>Projects</b></a>
+                    <a href="#about"><b>Skills</b></a>
+                    <a href="#about"><b>Experience</b></a>
+                    <a href="#contact"><b>Contact</b></a>
+
+                </div>
+            </div>  
+        </div>
+        <br><br>
+
+        <div class="main">
+            <div class="image">
+                <img src="Me.jpg" alt="description" />
+
+            </div>
+
+
+            <div class="wrapp">
+
+                <div class="content">
+                    <p>Yash Srivastava is a passionate web and app developer with a knack for creating innovative digital solutions. As the Joint Head of Curations at IEEE MUJ, he has demonstrated strong leadership and organizational skills. He also represented India and Manipal University Jaipur at Technoxian's World Robotics Championship as a member of Team RoboManipal in the Fastest Line Following competition. With a keen interest in developing cross-platform applications using Flutter, Yash is continually exploring new technologies to enhance user experiences and solve real-world problems.</p>
+
+                </div>
+
+                <div class="btn">
+                    <button onclick="window.open('Resume.pdf', '_blank')"><b>Resume</b></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="aboutme" id="about">
+        <div class="abme">
+            <div class="heads1"><p>About Me</p></div>
+            <div class="heads2"><p>Know more about me</p></div>
+        </div>
+        <br><br>
+        <div class="about_content">
+            <div class="right_a">
+                <p>I’m Yash Srivastava, an enthusiastic web and app developer who loves bringing creative ideas to life through code. Currently expanding my skills in full-stack development and exploring the world of emerging technologies, I enjoy learning by building and experimenting. As the Joint Head of Curations at IEEE MUJ, I’ve honed my teamwork and organizational abilities. With a growth mindset and curiosity for innovation, I'm always eager to take on new challenges and create meaningful digital experiences.</p>
+            </div>
+
+            <div class="image2">
+                <img src="AbMe.jpg" alt="description" />
+
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+
+
+
+
+
+    <section class="contact" id="contact">
+        <div id="particles-js">
+            <script src="particles.js"></script>
+            <script src="app.js"></script>
+    
+            
+        </div>
+        <div class="heading">
+            <div class="head1"><p>Contact Me</p></div>
+            <div class="head2"><p>Get in touch</p></div>
+        </div>
+        <br><br>
+        <div class="contact_content">
+            <div class="left_c">
+                <p>Let's build something amazing together! Feel free to reach out and conect with me. I'm always open to new ideas and collaborations.</p>
+            </div>
+            <div class="right_c">
+                <p><b>Message Me</b></p>
+                <div class="boxes">
+                    <input type="text" class="Name" placeholder="Name"> 
+                    <input type="text" class="Name" placeholder="Email">
+                    <input type="text" class="Sub" placeholder="Subject"> 
+                    <br>
+                    <input type="text" class="message" placeholder="Message">
+
+                </div>    
+
+            </div>
+        </div>
+        
+        
+    </section>
+    
+
+    
+
+
+
+
+
+</body>
+</html>
